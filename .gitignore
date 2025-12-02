@@ -1,4 +1,9 @@
 ```
+# Environment
+.env
+.env.local
+.env.*
+
 # Dependencies
 node_modules/
 .venv/
@@ -6,33 +11,38 @@ venv/
 __pycache__/
 .mypy_cache/
 .pytest_cache/
-pip-wheel-metadata/
-build/
+.julia/
+zig*/
+target/
+.gradle/
+
+# Compiled and build artifacts
+*.pyc
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
 dist/
-*.egg-info/
-
-# Logs
+build/
+coverage/
+htmlcov/
 *.log
-
-# Environment
-.env
-.env.local
-.env.*
+*.tmp
+*.swp
+*.swo
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
+# System
 .DS_Store
 Thumbs.db
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
+*.env.*
 
 # Compressed files
 *.zip
@@ -57,14 +67,4 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# Executables
-*.exe
-*.dll
-*.so
-*.a
-*.out
-
-# Julia
-julia-*/
 ```
